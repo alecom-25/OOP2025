@@ -65,16 +65,17 @@ class Map {
         }
 
         bool Includes(const Map<K,V>& map) {
-            if (map.size != size) {
-                return false;
-            }
+            int marime=0;
             for (int i = 0; i < size; i++) {
                 V temp;
-                if (!Get(map[i].key, temp)) {
-                    return false;
+                if (Get(map[i].key, temp)) {
+                    marime++;
                 }
             }
-            return true;
+            if (marime == map.size) {
+                return true;
+            }
+            return false;
         }
 
         struct Iterator {
