@@ -1,35 +1,3 @@
-/*#include <iostream>
-#include <exception>
-using namespace std;
-
-class divzero: public exception
-{
-    virtual const char* what() const throw()
-    {
-        return "div0 not allowed";
-    }
-} ;
-
-int main () {
-    divzero exceptiamea;
-    int a, b;
-    cin>>a>>b;
-    try
-    {
-        if (b == 0) {
-            throw exceptiamea;
-        }
-        cout<<a/b;
-    }
-    catch (exception& e)
-    {
-        cout << e.what() << '\n';
-    }
-    return 0;
-}
-//template, retinem ce vrem noi si sa tratam operatii de adaugare;
-//constructori, toti, normal, cu param, copy, move, dstructor, operator adunare, scadere, inmultire, cu un indexare, metode de manipulare elem
-*/
 #include <iostream>
 #include <exception>
 #include <cstdio>
